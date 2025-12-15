@@ -286,3 +286,6 @@ Both are queried during search for comprehensive results.
 **Poor search results**: Adjust `CHUNK_SIZE`, `CHUNK_OVERLAP`, or improve context prefixes in `DocumentProcessor`
 
 **Session history not working**: Verify `SessionManager.MAX_HISTORY` isn't set too low in config
+- Always use uv to run the server. Do not use pip directly.
+- Make sure to use uv to manage all dependencies.
+- Use uv to run python files.
