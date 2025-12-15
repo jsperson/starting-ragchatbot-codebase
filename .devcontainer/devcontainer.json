@@ -1,0 +1,22 @@
+{
+  "name": "RAG Chatbot Development",
+  "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+
+  // Run VS Code and extensions as the developer user
+  "remoteUser": "developer",
+  "containerUser": "developer",
+
+  // Ensure the developer user has the same UID/GID
+  "updateRemoteUserUID": true,
+
+  // Extensions to install
+  "customizations": {
+    "vscode": {
+      "extensions": []
+    }
+  },
+
+  // Optional:Mount the workspace with correct permissions
+  "workspaceMount": "source=${localWorkspaceFolder},target=/workspace,type=bind,consistency=cached",
+  "workspaceFolder": "/workspace"
+}
