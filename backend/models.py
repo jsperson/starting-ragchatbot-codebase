@@ -1,3 +1,4 @@
+"""Data models for RAG chatbot application"""
 from typing import List, Dict, Optional
 from pydantic import BaseModel
 
